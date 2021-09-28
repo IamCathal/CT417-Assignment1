@@ -1,3 +1,5 @@
+package com.github.iamcathal;
+
 import org.junit.Test;
 import java.util.ArrayList;
 import org.joda.time.DateTime;

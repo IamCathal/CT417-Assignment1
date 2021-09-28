@@ -16,5 +16,3 @@ include 'services:webservice'
 */
 
 rootProject.name = 'CT417-Assignment1'
-
-project.group = 'com.github.iamcathal'
