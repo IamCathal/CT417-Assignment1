@@ -26,6 +26,7 @@ public class StudentTest {
         assertEquals(student.getModules().size(), 0);
         assertEquals(student.getUsername(), expectedUsername);
         assertNotNull(student.getID());
+
     }
 
     @Test
