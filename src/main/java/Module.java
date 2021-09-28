@@ -1,3 +1,5 @@
+package com.github.iamcathal;
+
 import java.util.ArrayList;
 
 public class Module {
