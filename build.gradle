@@ -9,7 +9,7 @@
 // Apply the java-library plugin to add support for Java Library
 apply plugin: 'java-library'
 
-group = "com.github.iamcathal"
+group "com.github.iamcathal"
 
 // In this section you declare where to find the dependencies of your project
 repositories {
