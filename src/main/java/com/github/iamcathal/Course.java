@@ -65,4 +65,15 @@ public class Course {
     public void setEndTime(DateTime endTime) {
         this.endTime = endTime;
     }
+
+    @java.lang.Override
+    public java.lang.String toString() {
+        return "Course [" +
+                "courseName='" + courseName + '\'' +
+                ", modules=" + modules +
+                ", students=" + students +
+                ", startTime=" + startTime +
+                ", endTime=" + endTime +
+                ']';
+    }
 }

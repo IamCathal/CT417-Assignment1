@@ -56,4 +56,13 @@ public class Module {
         this.courses = courses;
     }
 
+    @java.lang.Override
+    public java.lang.String toString() {
+        return "Module [" +
+                "moduleName='" + moduleName + '\'' +
+                ", ID=" + ID +
+                ", students=" + students +
+                ", courses=" + courses +
+                ']';
+    }
 }
