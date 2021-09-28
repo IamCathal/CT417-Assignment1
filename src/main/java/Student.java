@@ -1,5 +1,6 @@
 import org.joda.time.DateTime;
 import java.util.ArrayList;
+import java.util.concurrent.ThreadLocalRandom;
 
 public class Student {
 
@@ -17,13 +18,13 @@ public class Student {
                    ArrayList<Course> courses,
                    ArrayList<Module> modules
         ) {
-        this.name = name;
-        this.age = age;
+        setName(name);
+        setAge(age);
         this.dateOfBirth = dateOfBirth;
         this.courses = courses;
         this.modules = modules;
 
-        this.ID = 123143;
+        this.ID = generateID();
         this.username = getUsername();
     }
 
@@ -32,12 +33,16 @@ public class Student {
         return this.username;
     }
 
+    private int generateID() {
+        return ThreadLocalRandom.current().nextInt(10000, 1000001);
+    }
+
     public String getName() {
         return name;
     }
 
     public void setName(String name) {
-        this.name = name;
+        this.name = (name.equals("")) ?  "John Doe" : name;
     }
 
     public int getAge() {
@@ -45,7 +50,11 @@ public class Student {
     }
 
     public void setAge(int age) {
-        this.age = age;
+        if ((age > 0) && (age < 115)) {
+            this.age = age;
+        } else {
+            this.age = 20;
+        }
     }
 
     public DateTime getDateOfBirth() {
@@ -59,18 +68,6 @@ public class Student {
     public int getID() {
         return ID;
     }
-
-    public void setID(int ID) {
-        this.ID = ID;
-    }
-
-//    public String getUsername() {
-//        return username;
-//    }
-//
-//    public void setUsername(String username) {
-//        this.username = username;
-//    }
 
     public ArrayList<Course> getCourses() {
         return courses;
