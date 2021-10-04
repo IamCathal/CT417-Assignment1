@@ -16,7 +16,7 @@ public class Course {
                   ArrayList<Student> students,
                   DateTime startTime,
                   DateTime endTime
-        ) {
+    ) {
         setCourseName(courseName);
 
         this.modules = modules;

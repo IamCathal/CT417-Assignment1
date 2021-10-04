@@ -19,7 +19,7 @@ public class Student {
                    DateTime dateOfBirth,
                    ArrayList<Course> courses,
                    ArrayList<Module> modules
-        ) {
+    ) {
         setName(name);
         setAge(age);
         this.dateOfBirth = dateOfBirth;

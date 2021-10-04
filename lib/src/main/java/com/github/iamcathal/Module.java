@@ -13,7 +13,7 @@ public class Module {
                   int ID,
                   ArrayList<Student> students,
                   ArrayList<Course> courses
-        ) {
+    ) {
         setModuleName(moduleName);
         setID(ID);
         this.students = students;
