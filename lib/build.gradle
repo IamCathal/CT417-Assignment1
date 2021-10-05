@@ -7,11 +7,13 @@
  */
 
 plugins {
-    id 'java'
+    id 'application'
     id 'maven-publish'
+//    id 'maven'
 }
 
-group "com.github.iamcathal"
+group 'com.github.iamcathal'
+artifact: 'ct417-assignment1'
 version '0.5-SNAPSHOT'
 
 repositories {
@@ -23,6 +25,8 @@ repositories {
 dependencies {
     // Use JUnit test framework.
     testImplementation 'junit:junit:4.13.2'
+
+    implementation 'org.apache.commons:commons-lang3:3.12.0'
 
     // This dependency is used internally, and not exposed to consumers on their own compile classpath.
     implementation 'com.google.guava:guava:30.1-jre'
