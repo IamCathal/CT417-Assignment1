@@ -9,7 +9,6 @@
 plugins {
     id 'java'
     id 'maven-publish'
-//    id 'maven'
 }
 
 group 'com.github.iamcathal'
