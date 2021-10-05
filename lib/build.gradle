@@ -37,7 +37,7 @@ publishing {
     publications {
         maven(MavenPublication) {
             groupId = 'com.github.iamcathal'
-            artifactId = 'assignment-one'
+            artifactId = 'assignmentone'
             version = '0.5-SNAPSHOT'
 
             from components.java
