@@ -13,7 +13,6 @@ plugins {
 }
 
 group 'com.github.iamcathal'
-artifact: 'ct417-assignment1'
 version '0.5-SNAPSHOT'
 
 repositories {
