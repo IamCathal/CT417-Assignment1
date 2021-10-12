@@ -39,7 +39,6 @@ public class CourseTest {
                 new DateTime(),
                 new DateTime()
         );
-
         assertEquals(testCourse.getCourseName(), expectedCourseName);
     }
 
